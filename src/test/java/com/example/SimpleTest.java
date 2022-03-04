@@ -17,4 +17,6 @@ public class SimpleTest {
     }
 
     //проверка ребейза
+
+    // 1 коммит
 }
