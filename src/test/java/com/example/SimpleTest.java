@@ -15,12 +15,4 @@ public class SimpleTest {
     void assertFalseTest(){
         assertFalse(1000 > 5000);
     }
-
-    //проверка ребейза
-
-    // 1 коммит
-
-    // 2 коммит
-
-    // 3 коммит
 }
