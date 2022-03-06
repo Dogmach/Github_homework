@@ -29,6 +29,12 @@ public class SimpleTest {
         assertThat(intVal, allOf(greaterThan(5), lessThanOrEqualTo(7), not(equalTo(6))));
     }
 
+    @Test
+    public void givenString_whenConditions_thenCorrect() {
+        String string = "Petya";
+        assertThat(string, anyOf(containsString("Pet"), endsWith("tya")));
+    }
+
 
 
 }
