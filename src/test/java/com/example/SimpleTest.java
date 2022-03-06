@@ -2,8 +2,11 @@ package com.example;
 
 import org.junit.jupiter.api.Test;
 
+import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class SimpleTest {
     @Test
@@ -19,4 +22,13 @@ public class SimpleTest {
     // 1 commit
     // 2 commit
     // 3 commit
+
+    @Test
+    void assertHamster() {
+        Integer intVal = 7;
+        assertThat(intVal, allOf(greaterThan(5), lessThanOrEqualTo(7), not(equalTo(6))));
+    }
+
+
+
 }
